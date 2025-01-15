@@ -1,0 +1,39 @@
+{
+  "schemaName": "postgrescdc2",
+  "enableColumnBasedNullHandling": false,
+  "dimensionFieldSpecs": [
+    {
+      "name": "product_id",
+      "dataType": "DOUBLE",
+      "notNull": false
+    },
+    {
+      "name": "product_name",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "brand",
+      "dataType": "STRING",
+      "notNull": false
+    },
+    {
+      "name": "price",
+      "dataType": "DOUBLE",
+      "notNull": false
+    },
+    {
+      "name": "quantity",
+      "dataType": "DOUBLE",
+      "notNull": false
+    }
+  ],
+  "dateTimeFieldSpecs": [    {
+      "name": "tsmp",
+      "dataType": "TIMESTAMP",
+      "fieldType": "DATE_TIME",
+      "notNull": false,
+      "format": "TIMESTAMP",
+      "granularity": "1:MILLISECONDS"
+    }]
+}
